@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="View_Controller.LoginScreenController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0">
+         <children>
+            <HBox alignment="CENTER" maxHeight="200.0" prefHeight="173.0" prefWidth="1366.0" AnchorPane.bottomAnchor="595.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="WCCSDLabel" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="13.0" prefWidth="640.0" text="Predictive Sewer Maintenance Project">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <PasswordField fx:id="usernameTextField" alignment="CENTER" layoutX="583.0" layoutY="324.0" prefHeight="25.0" prefWidth="198.0" promptText="username" />
+            <PasswordField fx:id="passwordTextField" alignment="CENTER" layoutX="582.0" layoutY="398.0" prefWidth="200.0" promptText="password" />
+            <Button fx:id="enterButton" layoutX="646.0" layoutY="500.0" mnemonicParsing="false" onAction="#onActionEnterProgram" prefHeight="25.0" prefWidth="75.0" text="Enter">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="usernameLabel" layoutX="462.0" layoutY="324.0" text="User Name">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordLabel" layoutX="462.0" layoutY="398.0" text="Password">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutY="587.0" prefHeight="10.0" prefWidth="1366.0" />
+            <Label fx:id="errorMsgLabel" layoutX="668.0" layoutY="446.0" text="Label" />
+            <HBox alignment="CENTER" layoutX="-1.0" layoutY="171.0" prefHeight="53.0" prefWidth="1366.0">
+               <children>
+                  <Separator prefHeight="8.0" prefWidth="1366.0" />
+               </children>
+            </HBox>
+            <Label fx:id="loginLabel" layoutX="660.0" layoutY="253.0" text="Login">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

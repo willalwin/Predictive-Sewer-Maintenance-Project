@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.MaintenanceViewController">
+   <children>
+      <Label layoutX="494.0" layoutY="57.0" text="Maintenance Calendar">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="pipeTableView" layoutX="263.0" layoutY="150.0" prefHeight="469.0" prefWidth="840.0">
+        <columns>
+          <TableColumn fx:id="pipeId" minWidth="120.0" prefWidth="120.0" text="Pipe ID" />
+          <TableColumn fx:id="featureID" minWidth="120.0" prefWidth="120.0" text="Feature ID" />
+            <TableColumn fx:id="nextMaint" minWidth="120.0" prefWidth="120.0" text="Next Maint" />
+            <TableColumn fx:id="lastMaint" minWidth="120.0" prefWidth="120.0" text="Last Maint" />
+            <TableColumn fx:id="type" minWidth="120.0" prefWidth="120.0" text="Type" />
+            <TableColumn fx:id="landUse" minWidth="120.0" prefWidth="120.0" text="Land Use" />
+            <TableColumn fx:id="techAssigned" minWidth="120.0" prefWidth="120.0" text="Tech Assigned" />
+        </columns>
+      </TableView>
+      <Label fx:id="currentUserLabel" layoutX="1188.0" layoutY="14.0" onMouseClicked="#EditUserButtonClicked" prefHeight="18.0" prefWidth="160.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Button layoutX="1268.0" layoutY="704.0" mnemonicParsing="false" onAction="#LogoutButtonClicked" prefHeight="32.0" prefWidth="70.0" text="Logout" />
+      <Button fx:id="SubmitWorkSchedule" layoutX="508.0" layoutY="665.0" mnemonicParsing="false" onAction="#SubmitWorkButtonClicked" prefHeight="32.0" prefWidth="70.0" text="Submit" />
+      <ComboBox fx:id="TechDropdownMenu" layoutX="263.0" layoutY="666.0" prefHeight="28.0" prefWidth="220.0" promptText="Select Technician" />
+      <Label layoutX="263.0" layoutY="631.0" text="Assign selected work to technician" />
+      <Button fx:id="ViewReportButton" layoutX="1008.0" layoutY="665.0" mnemonicParsing="false" onAction="#ViewReportsButtonClicked" text="View Reports" />
+      <Label fx:id="SubmitWorkErrorLabel" layoutX="263.0" layoutY="714.0" prefHeight="18.0" prefWidth="314.0" />
+   </children>
+</AnchorPane>
