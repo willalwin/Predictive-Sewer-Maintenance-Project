@@ -21,7 +21,7 @@ alter PLUGGABLE DATABASE open;
 select * from all_users;
 
 --create capstone user
-create user capstone identified by captsone;
+create user capstone identified by capstone;
 
 --grant privileges to capstone user
 grant create session to capstone;
