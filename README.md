@@ -4,4 +4,4 @@ This is my final project for my CS bachelor, it was done for Washoe County and a
 
 Language: Java, built in NetBeans 8.2 using Scene Builder for GUI
 
-Usage: Download files and run in NetBeans :)
+Usage: Download zip file and run in NetBeans :)
